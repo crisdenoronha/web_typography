@@ -4,3 +4,61 @@ body
   font-size: 16px;
   padding: 10px;
 }
+
+h2 {
+  text-transform: uppercase;
+  padding-bottom: 2em;
+  font-size: 30px;
+  color: #18345D;
+  background-color: white;
+}
+.hidden {
+  display: none;
+}
+
+.header {
+  padding: 50px;
+  color: white;
+  background-color: #BF062F;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 0px;
+
+}
+.photo {
+  width: 100%;
+}
+.container {
+  flex: 200px;
+}
+
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.text {
+  margin: auto;
+  padding: 6em 14em 6em 8em;
+  line-height: 24px;
+  color: #666666;
+  background-color: white;
+}
+
+.footer {
+  padding: 100px;
+  color: white;
+  background-color: #18345D;
+}
