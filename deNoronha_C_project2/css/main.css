@@ -1,14 +1,24 @@
 body
 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans', Arial, sans-serif;
   font-size: 16px;
-  padding: 10px;
 }
 
 h2 {
   text-transform: uppercase;
-  padding-bottom: 2em;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  background-color: #BF062F;
+}
+
+h3 {
+  text-transform: uppercase;
+  padding-bottom: 1em;
   font-size: 30px;
+  line-height: 40px;
   color: #18345D;
   background-color: white;
 }
@@ -22,18 +32,29 @@ h2 {
   background-color: #BF062F;
 }
 
-.grid {
+#container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 0px;
+}
 
+
+article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 60em;
 }
-.photo {
+
+article p {
+  padding-bottom: 2em;
+}
+
+figure {
+  display: block;
+  margin: 0;
+  padding: 0;
   width: 100%;
-}
-.container {
-  flex: 200px;
 }
 
 
@@ -51,7 +72,7 @@ h2 {
 
 .text {
   margin: auto;
-  padding: 6em 14em 6em 8em;
+  padding: 4em 14em 4em 8em;
   line-height: 24px;
   color: #666666;
   background-color: white;
